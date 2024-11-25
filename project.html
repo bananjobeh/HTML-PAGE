@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .container{
+            background-color: pink;
+            min-height: 100vh;
+        }
+        .padd{
+            padding-left: 150px;
+            padding-right: 150px;
+        }
+        .header{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            align-items: baseline;
+        }
+        
+        .list ul{
+            list-style-type: none;
+            display: flex;
+            gap: 40px;
+            align-items: baseline;
+        }
+        .register{
+            display: flex;
+            gap:10px;
+            background-color: #43A046;
+            padding: 12px 25px;
+            border-radius: 3px;
+            
+        }
+        .register .text-register a{
+            color: white;
+        }
+        .register .arrow {
+            color: white;
+        }
+        .list ul li :any-link{
+            text-decoration: none;
+        }
+        .text{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .list ul li a{
+            color: black;
+            font-size: 14px;
+        }
+        .logo{
+            display: flex;
+            gap: 5px;
+        }
+        .mainBody{
+            background-color: #F5F7FA;
+            display: flex;
+            flex-direction: column;
+        }
+        .dotted{
+            
+            display: flex;
+            justify-content: space-between;
+            padding-top: 130px;
+            padding-bottom: 100px;
+        }
+        .text2{
+            font-size: 60px;
+        }
+        .text3{
+            font-size: 60px;
+            color: #43A046;
+            
+        }
+        .text4{
+            margin-bottom: 40px;
+        }
+        .register2{
+            background-color: #43A046;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+        }
+        .register2 a{
+            text-decoration: none;
+            color: white;
+        }
+        .bodycontainer{
+            padding-top:40px;
+        }
+        .dot{
+            text-align: center;
+        }
+        .tape{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            gap: 40px;
+
+        }
+        .tapeFirstContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .tapeSecondContainer{
+            display: flex;
+            justify-content: space-between;
+        }
+        .text5{
+            font-size: 30px;
+        }
+        .text6{
+            font-size: 14px;
+        }
+        .secondBody{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+            gap: 50px;
+        }
+        .SecondBodyFirstcontainer{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+        .manage{
+            font-size: 25px;
+            font-weight: bold;
+            
+        }
+        .single{
+            font-size: 25px;
+            font-weight: bold;
+           
+        }
+        .who{
+            font-size: 12px;
+        }
+        .membership , .national , .clubs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            padding: 30px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 5px;
+        }
+        .bigText1 , .bigText2 ,.bigText3{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .smallText1 , .smallText2 , .smallText3{
+            text-align: center;
+            font-size: 13px;
+        }
+        .firstImg , .secondImg  , .thirdImg {
+            width: 50px;
+            
+        }
+        .SecondBodySecondcontainer{
+            display: flex;
+            /* background-color: red; */
+            justify-content: space-between;
+            
+        }
+        .thirdBody{
+            background-color: white;
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: space-around;
+        }
+        
+        .rightText{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-top: 40px;
+            
+        }
+        .title{
+            font-weight: bold;
+            font-size: 35px;
+        }
+        .paragraph{
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+        .learn a{
+            text-decoration: none;
+            color: white;
+            background-color: #43A046;
+            padding: 15px 25px;
+            border-radius: 5px;
+        }
+        .grayTape{
+            background-color: #F5F7FA;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .cell{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .helping , .business{
+            font-size: 30px;
+            font-weight: bold;
+            
+        }
+        .business{
+            color: #43A046;
+        }
+        .smallp{
+            font-size: 14px;
+        }
+        .rightNum{
+            display: flex;
+            gap: 60px;
+        }
+        .firstnum{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .col1 , .col2{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .leftcontainer{
+            padding-top: 20px;
+        }
+        .forth{
+            background-color: white;
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: space-around;
+        }
+        .leftTxt{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .how{
+            font-size: 29px;
+            font-weight: bold;
+        }
+        .long{
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+        .leftTxt{
+            padding-top: 40px;
+        }
+        .fifth{
+            display: flex;
+            background-color: #F5F7FA;
+            justify-content: space-around;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .longtxt{
+            font-size: 14px;
+            color: #717171;
+        }
+        .rright{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .smith{
+            color: #43A046;
+            font-weight: bold;
+        }
+
+        .fifthcontainer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .smalltxt{
+            font-size: small;
+            color: #89939E;
+        }
+        .ic2{
+            display: flex;
+            gap: 10px;
+            color: #43A046;
+            font-weight: bold;  
+        }
+        .meet a{
+            text-decoration: none;
+            color: inherit;
+        }
+        .sixth{
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            gap: 20px;
+        }
+        .three{
+            text-align: center;
+            color: #717171;
+        }
+        .headtitle{
+            font-size: 26px;
+            font-weight: bold;
+            color: #4D4D4D;
+        }
+        .sixthcontainer{
+            width: 100%;
+            display: flex;
+            gap: 30px;
+            justify-content: space-evenly;
+            /* background-color: rebeccapurple; */
+        }
+        .read{
+            display: flex;
+            gap: 10px;
+        }
+        .card{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: #F5F7FA;
+            padding: 12px;
+            border-radius: 5px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            position: absolute;
+        }
+        .card1 .card{
+            bottom: -50px;
+            left: 13px;
+        }
+        .card2 .card {
+            left: 16px;
+            bottom: -50px;
+        }
+        .card3 .card{
+            left:18px ;
+            bottom: -50px;
+        }
+        .before , .arrow3{
+            color: #43A046;
+            font-weight: bold;
+        }
+        .card1 ,.card2 ,.card3 {
+            position: relative;
+        }
+        .seventh{
+            padding-top: 15px;
+            padding-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 35px;
+            background-color: #F5F7FA;
+        }
+        .seven1{
+            font-size: 40px;
+            text-align: center;
+        }
+        .seven2{
+            display: flex;
+            gap: 10px;
+            background-color: #43A046;
+            border-radius: 5px;
+            padding: 10px 25px;
+            justify-content: center;
+        }
+        .learn1 a{
+            text-decoration: none;
+            color: white;
+        }
+        .arrow4{
+            color: white;
+        }
+        .eighth{
+            display: flex;
+            background-color: #4D4D4D;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            gap: 80px;
+            color: white;
+        }
+        .ecol1{
+            flex-grow: 2;
+        }
+        .ecol4{
+            flex-grow: 1;
+        }
+        .ecol1container{
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+        .ecol1container0{
+            display: flex;
+            gap: 10px;
+        }
+        .copy{
+            font-size: small;
+        }
+        .enexcent{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .ecol2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ecol2 ul li{
+            list-style-type: none;
+            font-size: 12px;
+        }
+        .ecol2 ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ecol3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ecol3 ul li{
+            list-style-type: none;
+            font-size: 12px;
+        }
+        .ecol3 ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ecol4{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;     
+        }
+        input{
+            outline: none;
+            padding: 10px;
+            width: 200px;
+            background-color: #d9dbe13d;
+            border: none;
+            border-radius: 5px;
+            
+        }
+        .email{
+            position: relative;
+        }
+        .imggg{
+            position: absolute;
+            bottom: 0px;
+            left: 175px;
+        }
+        input::placeholder{
+            color: white;
+        }
+        .ecol1container2{
+            display: flex;
+            gap: 20px;
+        }                       
+        .ecol2 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .ecol3 ul li a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="header padd">
+            <div class="logo">
+                <div class="l1"><img src="Icon.png" alt=""></div>
+                <div class="text">Nexcent</div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Community</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li>
+                        <div class="register">
+                            <div class="text-register"><a href="">Register Now</a></div>
+                            <div class="arrow">&rarr;</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainBody padd">
+            <div class="dotted">
+                <div class="bodycontainer">
+                <div class="text2">Lessons and insights</div>
+                <div class="text3">from 8 years</div>
+                <div class="text4">Where to grow your business as a photographer: site or social media?</div>
+                <span class="register2"><a href="">Register</a></span>
+                </div>
+                <div class="mainimg"><img src="Illustration.png" alt=""></div>
+            </div>
+            <div class="dot"><img src="Dot.png" alt=""></div>
+        </div>
+        <div class="tape padd">
+            <div class="tapeFirstContainer">
+                <div class="text5">Our Clients</div>
+                <div class="text6">We have been working with some Fortune 500+ clients</div>
+            </div>
+            <div class="tapeSecondContainer">
+                <div class="l2"><img src="Logo.png" alt=""></div>
+                <div class="l3"><img src="Logo (1).png" alt=""></div>
+                <div class="l4"><img src="Logo (2).png" alt=""></div>
+                <div class="l5"><img src="Logo (3).png" alt=""></div>
+                <div class="l6"><img src="Logo (4).png" alt=""></div>
+                <div class="l7"><img src="Logo (5).png" alt=""></div>
+                <div class="l8"><img src="Logo (6).png" alt=""></div>
+            </div>
+        </div>
+        <div class="secondBody padd">
+            <div class="SecondBodyFirstcontainer">
+                <div class="manage">Manage your entire community</div>
+                <div class="single">in a single system</div>
+                <div class="who">Who is Nextcent suitable for?</div>
+            </div>
+            <div class="SecondBodySecondcontainer">
+                <div class="membership">
+                    <div class="FirstImg"><img src="Icon 2(1).png" alt=""></div>
+                    <div class="bigText1">
+                        <div class="bigText11">Membership</div>
+                        <div class="bigText12">Organisations</div>
+                    </div>
+                    <div class="smallText1">
+                        <div class="smallText11">Our membership management </div>
+                        <div class="smallText12">software provides full automation of</div>
+                        <div class="smallText13">membership renewals and payments</div>
+                    </div>
+                </div>
+                <div class="national">
+                    <div class="SecondImg"><img src="22.png" alt=""></div>
+                    <div class="bigText2">
+                        <div class="bigText21">National </div>
+                        <div class="bigText22">Associations</div>
+                    </div>
+                    <div class="smallText2">
+                        <div class="smallText21">Our membership management </div>
+                        <div class="smallText22">software provides full automation of</div>
+                        <div class="smallText23">membership renewals and </div>
+                        <div class="smallText24">payments</div>
+                    </div>
+                </div>
+                <div class="clubs">
+                    <div class="thirdImg"><img src="33.png" alt=""></div>
+                    <div class="bigText3">
+                        <div class="bigText31">Clubs And </div>
+                        <div class="bigText32">Groups</div>
+                    </div>
+                    <div class="smallText3">
+                        <div class="smallText31">Our membership management </div>
+                        <div class="smallText32">software provides full automation of </div>
+                        <div class="smallText33">membership renewals and payments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="thirdBody padd">
+            
+                <div class="leftImg"><img src="Frame 35.png" alt=""></div>
+                <div class="rightText">
+                    <div class="title">
+                        <div class="title1">The unseen of spending three </div>
+                        <div class="title2">years at Pixelgrade</div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed </div>
+                        <div class="p2">accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed </div>
+                        <div class="p3">porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam</div>
+                        <div class="p4">quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</div>
+                    </div>
+                    <div class="learn"><a href="">Learn More</a></div>
+
+                </div>
+       </div>
+       <div class="grayTape padd">
+        <div class="leftText">
+            <div class="leftcontainer">
+                <div class="helping">Helping a local </div>
+                <div class="business">business reinvent itself</div>
+                <div class="smallp">We reached here with our hard work and dedication</div> 
+            </div>
+        </div>
+        <div class="rightNum">
+            <div class="col1">
+                <div class="cell">
+                    <div class="icon1"><img src="first.png" alt=""></div>
+                    <div class="numbers">
+                        <div class="firstnum">2,245,341</div>
+                        <div class="undernum">Members</div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="icon1"><img src="third.png" alt=""></div>
+                    <div class="numbers">
+                        <div class="firstnum">828,867</div>
+                        <div class="undernum">Event Bookings</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="cell">
+                    <div class="icon1"><img src="second.png" alt=""></div>
+                    <div class="numbers">
+                        <div class="firstnum">46,328</div>
+                        <div class="undernum">Clubs</div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="icon1"><img src="forth.png" alt=""></div>
+                    <div class="numbers">
+                        <div class="firstnum">1,926,436</div>
+                        <div class="undernum">Payments</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="forth padd">
+        <div class="rightpic"><img src="pana.png" lt=""></div>
+        <div class="leftTxt">
+            <div class="how">
+                <div class="how1">How to design your site footer like</div>
+                <div class="how1">we did</div>
+            </div>
+            <div class="long">
+                <div>Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt </div>
+                <div>molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at </div>
+                <div>libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta</div>
+                <div>nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer</div>
+                <div>in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi</div>
+                <div>ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</div>
+            </div>
+            <div class="learn"><a href="">Learn More</a></div>
+        </div>
+       </div>
+       <div class="fifth padd">
+        <div class="pic"><img src="image 9.png" alt=""></div>
+        <div class="rright">
+        <div class="longtxt">
+            <div>Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus</div>
+            <div>tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida</div>
+            <div>enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie</div>
+            <div>mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse</div>
+            <div>eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, </div>
+            <div>vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum</div>
+            <div>id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</div>
+        </div>
+        <div class="smith">Tim Smith</div>
+        <div class="smalltxt">British Dragon Boat Racing Association</div>
+        <div class="fifthcontainer">
+            <div class="ic1"><img src="photo1.png" alt=""></div>
+            <div class="ic1"><img src="photo2.png" alt=""></div>
+            <div class="ic1"><img src="photo3.png" alt=""></div>
+            <div class="ic1"><img src="photo4.png" alt=""></div>
+            <div class="ic1"><img src="photo5.png" alt=""></div>
+            <div class="ic1"><img src="photo6.png" alt=""></div>
+            <div class="ic2">
+                <div class="meet"><a href="">Meet all customers</a></div>
+                <div class="arrow1">&rarr;</div>
+            </div>
+        </div>
+    </div>
+       </div>
+       <div class="sixth padd">
+        <div class="headtitle">Caring is the new marketing</div>
+        <div class="three">
+            <div>The Nextcent blog is the best place to read about the latest membership insights,</div>
+            <div>trends and more. See who's joining the community, read about how our community</div>
+            <div>are increasing their membership income and lot's more.​</div>
+        </div>
+        <div class="sixthcontainer">
+            <div class="card1">
+                <img src="image 18.png" alt="">
+                <div class="card">
+                    <div class="txt">
+                        <div>Creating Streamlined </div>
+                        <div>Safeguarding Processes with</div>
+                        <div>OneRen</div>
+                    </div>
+                    <div class="read">
+                        <div class="before">Readmore</div>
+                        <div class="arrow3">&rarr;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card2">
+                <img src="image 19.png" alt="">
+                <div class="card">
+                    <div class="txt">
+                        <div>What are your safeguarding</div>
+                        <div>responsibilities and how can</div>
+                        <div>you manage them?</div>
+                    </div>
+                    <div class="read">
+                        <div class="before">Readmore</div>
+                        <div class="arrow3">&rarr;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card3">
+                <img src="image 20.png" alt="">
+                <div class="card">
+                    <div class="txt">
+                        <div>Revamping the Membership</div>
+                        <div>Model with Triathlon </div>
+                        <div>Australia</div>
+                    </div>
+                    <div class="read">
+                        <div class="before">Readmore</div>
+                        <div class="arrow3">&rarr;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="seventh padd">
+        <div class="seven1">
+            <div>Pellentesque suscipit </div>
+            <div>fringilla libero eu.</div>
+        </div>
+        <div class="seven2">
+            <div class="learn1"><a href="">Get a Demo</a></div>
+            <div class="arrow4">&rarr;</div>
+        </div>
+       </div>
+       <div class="eighth padd">
+        <div class="ecol1">
+            <div class="ecol1container">
+            <div class="ecol1container0">
+                <div class="elogo"><img src="Icon.png" alt=""></div>
+                <div class="enexcent">Nexcent</div>
+            </div>
+            <div class="ecol1container1">
+                <div class="copy">Copyright &copy; 2020 Landify UI Kit.</div>
+                <div class="copy">All rights reserved</div>
+            </div>
+            <div class="ecol1container2">
+                <div class="eicon"><img src="Soci1al Icons.png" alt=""></div>
+                <div class="eicon"><img src="Social Icons.png" alt=""></div>
+                <div class="eicon"><img src="Social Icons1.png" alt=""></div>
+                <div class="eicon"><img src="So1111cial Icons.png" alt=""></div>
+            </div>
+         </div>
+           
+        </div>
+        <div class="ecol2">
+            <div class="company">Company</div>
+            <div>
+                <ul>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact us</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Testimonials</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="ecol3">
+            <div class="company">Support</div>
+            <div>
+                <ul>
+                    <li><a href="">Help center</a></li>
+                    <li><a href="">Terms of service</a></li>
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Status</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ecol4">
+            <div class="stay">Stay up to date</div>
+            <div class="email">
+                <input type="text" placeholder="Your email address">
+                <div class="imggg"><img src="send.png" alt=""></div>
+            </div>
+        </div>
+       </div>
+</body>
+</html>
